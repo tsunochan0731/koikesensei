@@ -1,2 +1,2 @@
 def colon_ca():
-    return "大腸癌"
+    print("大腸癌")
