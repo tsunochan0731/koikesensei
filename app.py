@@ -23,8 +23,10 @@ def index():
 #POSTの時の処理
 #returnの前でも返せない。なぜ？
 @app.route("/result", methods=['POST'])
-cancers.colon_ca()
-return "関数以外は大丈夫です"
+def post_cancers():
+    colon = cancers.colon_ca()
+    print(colon)
+    return "関数以外は大丈夫です"
 
 #おまじない
 if __name__ == "__main__":
