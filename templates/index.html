@@ -11,11 +11,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class="header">
+    </div>
     <div class="main">
       <p>患者のプロファイルを入力してください。</p>
       <form action="/result" method="POST">
+         <p>年齢を入力してください(半角数字)<input type = "text" name="age"></p>
+         <p>性別を入力してください</p>
+         <input type="radio" name="gender" value="m">男性
+         <input type="radio" name="gender" value="f">女性
+         <p>(女性の場合)現在妊娠していますか？</p>
+         <input type="radio" name="pregnancy" value="1">はい
+         <input type="radio" name="pregnancy" value="2">いいえ
+         <p>タバコを吸っていますか？</p>
+         <input type="radio" name="smoking" value="1">はい
+         <input type="radio" name="smoking" value="2">いいえ
+         <input type="radio" name="smoking" value="3">昔吸っていたけど今はやめた
+         <p>1日何本吸っています(した)か？(半角数字)<input type ="text" name="number_of_smoking"></p>
+         <p>何年間吸っています(した)か？(半角数字)<input type ="text" name="years_of_smoking"></p>
+         <p>これまでに性交渉の経験はありますか？</p>
+         <input type="radio" name="sex" value="1">はい
+         <input type="radio" name="sex" value="2">いいえ
+         <p>お酒は飲みますか？</p>
+         <input type="radio" name="alcohol" value="1">はい
+         <input type="radio" name="alcohol" value="2">いいえ
+         <p>身長を教えてください(cm)(半角数字)<input type ="text" name="height"></p>
+         <p>体重を教えてください(kg)(半角数字)<input type ="text" name="weight"></p>
          <p><input type = "submit" value = "Start!"></p>
       </form>
+    </div>
+    <div class="footer">
     </div>
   </body>
 </html>
