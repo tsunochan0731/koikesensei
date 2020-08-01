@@ -1,6 +1,6 @@
 #Flaskとrender_template（HTMLを表示させるための関数）をインポート
 #ライブラリを使用する際のお約束
-from flask import Flask,render_template, request
+from flask import Flask,render_template, request, url_for
 import cancers
 import immunizations
 import others
