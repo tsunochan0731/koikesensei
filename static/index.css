@@ -24,7 +24,7 @@
 .main-result{
   font-size:15px;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  margin:0px 50%;
+  margin:0px 30%;
   padding:0px;
   text-align:left;
 }
@@ -49,7 +49,7 @@ span{
   text-align    : center;
   cursor        : pointer;
   padding       : 12px 60px;
-  background: rgba(0,100,0,0.65);
+  background: #006600;
   color         : #ffffff;
   transition    : .3s;
   font-family: 'Montserrat', sans-serif;

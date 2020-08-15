@@ -28,7 +28,6 @@
     <div class="main-result">
       <p class="thema2">本患者に推奨されるヘルスメンテナンスの項目は下記の通りです</p>
 
-      <caption>定義リスト(dl)の例：</caption>
       <dl>
       {% for i in result %}
         <dt>{{ i.split(':')[0] }}</dt>
@@ -36,7 +35,7 @@
         <p></p>
       {% endfor %}
       </dl>
-      
+
     </div>
     <div class="footer">
       <div class="container">

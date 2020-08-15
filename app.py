@@ -61,7 +61,7 @@ def calculation():
         result.append(cancers.prostate_ca())
 
     #以下Others
-    if age > 20:
+    if smoking == 1:
         result.append(others.smoking())
     if age >= 50 and gender == "f":
         result.append(others.osteopolosis())
