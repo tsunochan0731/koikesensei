@@ -1,0 +1,158 @@
+.header {
+  color:white;
+  text-align:center;
+}
+
+.thema{
+  font-size:20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+}
+
+.main{
+  font-size:15px;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin:0px 30%;
+  padding:0px;
+  text-align:center;
+}
+
+.small{
+  font-size:8px;
+}
+
+.main-result{
+  font-size:15px;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin:0px 50%;
+  padding:0px;
+  text-align:left;
+}
+
+html{
+  background-color: #F5F5F5;
+}
+
+body{
+  padding: 0px;
+  background-color: white;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+span{
+  text-align: center
+}
+
+.button-submit {
+  display       : inline-block;
+  font-size     : 18pt;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 12px 60px;
+  background: rgba(0,100,0,0.65);
+  color         : #ffffff;
+  transition    : .3s;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:30px;
+  border: none;
+}
+
+.button-submit:hover {
+  box-shadow    : none;
+  color         : #006600;
+  background    : #ffffff;
+}
+
+input {
+  background-color: #f5f5f5;
+}
+
+.jumbotron-header{
+  background: linear-gradient(-135deg, rgba(255,255,0,0.6), rgba(0,100,0,0.65)),url(/static/images/yugekeshiki.png);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item {
+  float:left;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color:#666666;
+  margin-top:25px;
+}
+
+input[type=radio]{
+  display:none;
+}
+
+input:checked + label {
+  background: #AAAAAA;/* マウス選択時の背景色を指定する */
+  color: #333333; /* マウス選択時のフォント色を指定する */
+}
+
+.radio {
+  display: block; /* ブロックレベル要素化する */
+  float: left; /* 要素の左寄せ・回り込を指定する */
+  width: 100%; /* ボックスの横幅を指定する */
+  height: 45px; /* ボックスの高さを指定する */
+  padding-left: 5px; /* ボックス内左側の余白を指定する */
+  padding-right: 5px; /* ボックス内御右側の余白を指定する */
+  color: #696969; /* フォントの色を指定 */
+  background-color:#dcdcdc;
+  text-align: center; /* テキストのセンタリングを指定する */
+  line-height: 45px; /* 行の高さを指定する */
+  cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+}
+
+/*ここから下はFooter関連*/
+.footer-sentence{
+  font-size:15px;
+  font-family: "Avenir Next";
+  text-align:right;
+  padding-right: 20px;
+  float:right;
+  color:white;
+}
+
+.footer-logo{
+  float:left;
+  width:280px;
+  height:100px;
+}
+
+.footer {
+    background-color: #006600;
+    padding-top:40px;
+    width: 100%;
+    bottom: 0;
+    font-weight: lighter;
+    color: white;
+}
+
+.footer h3{
+    font-weight:lighter;
+}
+.footer ul{
+    padding-left:5px;
+    list-style:none;
+}
+.footer p{
+    text-align : justify;
+    font-size : 12px;
+}
+.footer iframe {
+    width:100%;
+    position:relative;
+    height:170px;
+}
+.sm{
+    list-style:none;
+    overflow:auto;
+}
+.sm li {
+    display: inline;
+    padding:5px;
+    float:left;
+}
+.sm li a img {
+    width:32px;
+}

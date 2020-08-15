@@ -22,6 +22,10 @@ def index():
     return render_template('index.html', title='health maintainance')
     # returnにtitleとnameの変数を追加。
 
+@app.route("/toppage")
+def toppage():
+    return render_template('toppage.html', title='health maintainance')
+
 #POSTの時の処理
 #returnの前でも返せない。なぜ？
 @app.route("/result", methods=['POST'])
@@ -96,7 +100,7 @@ def calculation():
     if age >= 20:
         result.append(immunizations.HBV())
 
-    return render_template('result.html',result=result)
+    return render_template('result1.html',result=result)
 
 #おまじない
 if __name__ == "__main__":
