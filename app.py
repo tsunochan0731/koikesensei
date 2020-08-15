@@ -100,7 +100,7 @@ def calculation():
     if age >= 20:
         result.append(immunizations.HBV())
 
-    return render_template('result1.html',result=result)
+    return render_template('result.html',result=result)
 
 #おまじない
 if __name__ == "__main__":
