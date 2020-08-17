@@ -11,10 +11,6 @@ app = Flask(__name__)
 
 #デコレーターという機能を使ったルーティングの設定
 #ルーティングとは、URLと処理を対応づけること、Flaskのルーティングは、URLとfuncitonを紐付けます。ルーティングには、route() を用います。
-#「/」へアクセスがあった場合に、"Hello World"の文字列を返す
-@app.route("/")
-def hello():
-    return "Hello World"
 
 #「/index」へアクセスがあった場合に、「index.html」を返す
 @app.route("/index")

@@ -9,6 +9,12 @@
   text-align:center;
 }
 
+.thema2{
+  font-size:20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+}
+
 .main{
   font-size:15px;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -48,7 +54,7 @@ span{
   font-size     : 18pt;
   text-align    : center;
   cursor        : pointer;
-  padding       : 12px 60px;
+  padding       : 12px 30px;
   background: #006600;
   color         : #ffffff;
   transition    : .3s;
@@ -61,6 +67,50 @@ span{
   box-shadow    : none;
   color         : #006600;
   background    : #ffffff;
+}
+
+.button-back{
+  display       : inline-block;
+  font-size     : 12pt;
+  text-align    : center;
+  float: right;
+  cursor        : pointer;
+  padding       : 12px 10px;
+  background: #ffffff;
+  color         : #006600;
+  transition    : .3s;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.button-back :hover {
+  box-shadow    : none;
+  color         : #ffffff;
+  background    : #006600;
+}
+
+#disclaimer{
+  display       : inline-block;
+  font-size     : 12pt;
+  text-align    : center;
+  float: center;
+  cursor        : pointer;
+  padding       : 12px 10px;
+  background: #ffffff;
+  color         : #006600;
+  transition    : .3s;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:20px;
+  margin-bottom: 20px;
+  border: none;
+ }
+
+#disclaimer :hover {
+  box-shadow    : none;
+  color         : #ffffff;
+  background    : #006600;
 }
 
 input {
@@ -85,8 +135,8 @@ input[type=radio]{
 }
 
 input:checked + label {
-  background: #AAAAAA;/* マウス選択時の背景色を指定する */
-  color: #333333; /* マウス選択時のフォント色を指定する */
+  background: #006600;/* マウス選択時の背景色を指定する */
+  color: #ffffff; /* マウス選択時のフォント色を指定する */
 }
 
 .radio {
@@ -155,4 +205,10 @@ input:checked + label {
 }
 .sm li a img {
     width:32px;
+}
+
+@media screen and (max-width: 576px){
+  .main{
+    margin: 0 5px;
+  }
 }

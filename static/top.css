@@ -4,7 +4,8 @@
     background-attachment: fixed;
     padding:40px 50px;
     font-family: 'Anton', sans-serif, "Hiragino Kaku Gothic ProN";
-    color: white
+    margin-bottom: 0px;
+    color: white;
 }
 
 .thema{
@@ -23,4 +24,10 @@
 .button {
   text-align: center;
   margin: 30px 20px;
+}
+
+@media screen and (max-width: 576px){
+  .main{
+    margin: 0 5px;
+  }
 }

@@ -26,7 +26,7 @@
     </div>
 
     <div class="main-result">
-      <p class="thema2">本患者に推奨されるヘルスメンテナンスの項目は下記の通りです</p>
+      <p class="thema">These healthmaintainance are recommended for your patient</p>
 
       <dl>
       {% for i in result %}
@@ -35,8 +35,28 @@
         <p></p>
       {% endfor %}
       </dl>
-
+    <div class="row">
+      <div class="col-12">
+        <button type="button" class="button-back" onclick="location.href='index'">←Back to the Form</button>
+      </div>
     </div>
+
+    <div class="row">
+    <div class="col-12">
+        <p>
+          <button class="btn btn-primary" id="disclaimer" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Disclaimer
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            This application has been produced by Shiga Center of Family Medicine and Hideki Tsunoda for the information of health professionals. The statements and recommendations it contains are, unless labelled as 'expert opinion', based on independent review of the available evidence. Interpretation of the results of this calculator by those without appropriate medical and/or clinical training is not recommended, other than at the request of, or in consultation with, a relevant health professional.While care has been taken in preparing the content of this material, the National Vascular Disease Prevention Alliance and their employees cannot accept any liability, including for any loss or damage, resulting from the reliance on the content, or for its accuracy, currency and completeness. This material may be found in third parties' programs or materials. This does not imply an endorsement or recommendation by the National Vascular Disease Prevention Alliance for such third parties' organisations, products or services, including these parties' materials or information. Any use of National Vascular Disease Prevention Alliance material by another person or organisation is done so at the user's own risk. The entire contents of this material are subject to copyright protection.
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
     <div class="footer">
       <div class="container">
       <div class="row">
