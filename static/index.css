@@ -15,6 +15,10 @@
   text-align:center;
 }
 
+.caution{
+  margin-bottom: 20px;
+}
+
 .main{
   font-size:15px;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -97,17 +101,49 @@ span{
   text-align    : center;
   float: center;
   cursor        : pointer;
-  padding       : 12px 10px;
+  padding       : 0px 10px;
   background: #ffffff;
   color         : #006600;
   transition    : .3s;
   font-family: 'Montserrat', sans-serif;
   margin-top:20px;
-  margin-bottom: 20px;
-  border: none;
+  margin-bottom:20px;
+  border-left: none;
+  border-right: none;
+  border-top:solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-radius: 0px;
+  padding:20px 40px;
  }
 
 #disclaimer :hover {
+  box-shadow    : none;
+  color         : #ffffff;
+  background    : #006600;
+}
+
+#note{
+  display       : inline-block;
+  font-size     : 8pt;
+  text-align    : center;
+  float: center;
+  cursor        : pointer;
+  padding       : 0px 10px;
+  background: #ffffff;
+  color         : #dcdcdc;
+  transition    : .3s;
+  font-family: "Avenir Next", sans-serif;
+  margin-top:0px;
+  margin-bottom:0px;
+  border-left: none;
+  border-right: none;
+  border-top:solid 1px #dcdcdc;
+  border-bottom: solid 1px #dcdcdc;
+  border-radius: 0px;
+  padding:10px 40px;
+ }
+
+#note :hover {
   box-shadow    : none;
   color         : #ffffff;
   background    : #006600;
@@ -156,7 +192,7 @@ input:checked + label {
 /*ここから下はFooter関連*/
 .footer-sentence{
   font-size:15px;
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", sans-serif;
   text-align:right;
   padding-right: 20px;
   float:right;

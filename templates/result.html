@@ -27,11 +27,33 @@
 
     <div class="main-result">
       <p class="thema">These healthmaintainance are recommended for your patient</p>
+      <div class="row">
+        <div class="col-sm-12 caution">
+          <p>※以下の点にご注意ください。</p>
+            <li>推奨度として”推奨する”、”検討する”を使い分けています。</li>
+            <li>Statementにある助成の費用は竜王町在住の場合のものです</li>
+            <li>検診としての検査項目が医療保険での診療としてどの程度許容されるかは、その地域によって異なります。</li>
+        </div>
+      </div>
 
       <dl>
       {% for i in result %}
-        <dt>{{ i.split(':')[0] }}</dt>
-        <dd>{{ i.split(':')[1] }}</dd>
+        <dt><h4>{{ i.split('fff')[0] }}</h4></dt>
+        <dd>{{ i.split('fff')[1] }}</dd>
+        <div class="row">
+        <div class="col-12">
+            <p style="text-align: center;">
+              <button class="btn btn-primary" id="note" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Notes
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                {{ i.split('fff')[2] }}
+              </div>
+            </div>
+          </div>
+          </div>
         <p></p>
       {% endfor %}
       </dl>
@@ -43,14 +65,14 @@
 
     <div class="row">
     <div class="col-12">
-        <p>
+        <p style="text-align: center;">
           <button class="btn btn-primary" id="disclaimer" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
             Disclaimer
           </button>
         </p>
         <div class="collapse" id="collapseExample">
           <div class="card card-body">
-            This application has been produced by Shiga Center of Family Medicine and Hideki Tsunoda for the information of health professionals. The statements and recommendations it contains are, unless labelled as 'expert opinion', based on independent review of the available evidence. Interpretation of the results of this calculator by those without appropriate medical and/or clinical training is not recommended, other than at the request of, or in consultation with, a relevant health professional.While care has been taken in preparing the content of this material, the National Vascular Disease Prevention Alliance and their employees cannot accept any liability, including for any loss or damage, resulting from the reliance on the content, or for its accuracy, currency and completeness. This material may be found in third parties' programs or materials. This does not imply an endorsement or recommendation by the National Vascular Disease Prevention Alliance for such third parties' organisations, products or services, including these parties' materials or information. Any use of National Vascular Disease Prevention Alliance material by another person or organisation is done so at the user's own risk. The entire contents of this material are subject to copyright protection.
+            このアプリケーションは、患者にヘルスメンテナンスを提供する医療従事者のため、滋賀家庭医療学センター(SCFM)によって作られたものです。記載されている statementsとrecommendationsについては、SCFM内で十分な議論を経て作られたものですが、本アプリケーションの内容を患者に適用される際はくれぐれもご自身で内容をご確認いただいた上で、個々の患者や地域の状況に応じて利用をお願いします。私たちは、本アプリケーションの使用によって生じたいかなる身体的・経済的損害についても責任をとりません。
           </div>
         </div>
       </div>
