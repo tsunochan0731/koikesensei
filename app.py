@@ -98,7 +98,7 @@ def calculation():
     if age >= 20:
         result.append(immunizations.HBV())
     if age >= 50:
-        reult.append(immunizations.Zoster())
+        result.append(immunizations.Zoster())
 
     return render_template('result.html',result=result)
 
