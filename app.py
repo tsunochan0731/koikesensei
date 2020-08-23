@@ -18,7 +18,7 @@ def index():
     return render_template('index.html', title='health maintainance')
     # returnにtitleとnameの変数を追加。
 
-@app.route("/toppage")
+@app.route("/")
 def toppage():
     return render_template('toppage.html', title='health maintainance')
 
@@ -83,6 +83,8 @@ def calculation():
         result.append(others.obesity())
     if age >= 40 and age < 80:
         result.append(others.hepatitis())
+    if age >= 18 and age <= 45 and gender == "f":
+        result.append(others.folate())
 
     #以下Immunitzationns
     if age >= 65:
@@ -95,6 +97,8 @@ def calculation():
         result.append(immunizations.HPV())
     if age >= 20:
         result.append(immunizations.HBV())
+    if age >= 50:
+        reult.append(immunizations.Zoster())
 
     return render_template('result.html',result=result)
 
