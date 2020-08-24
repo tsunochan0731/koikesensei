@@ -252,3 +252,9 @@ input:checked + label {
     margin: 0 5px;
   }
 }
+
+@media screen and (max-width: 576px){
+  .main-result{
+    margin: 0 5px;
+  }
+}
