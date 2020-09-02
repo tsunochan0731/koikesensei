@@ -159,6 +159,7 @@ input {
 
 .jumbotron-header{
   background: linear-gradient(-135deg, rgba(255,255,0,0.6), rgba(0,100,0,0.65)),url(/static/images/yugekeshiki.png);
+  background-size: cover;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -245,6 +246,10 @@ input:checked + label {
 }
 .sm li a img {
     width:32px;
+}
+
+#hplink a:visited{
+  color:white;
 }
 
 @media screen and (max-width: 576px){
