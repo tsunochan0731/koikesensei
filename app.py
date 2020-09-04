@@ -83,7 +83,7 @@ def calculation():
         result.append(others.obesity())
     if age >= 40 and age < 80:
         result.append(others.hepatitis())
-    if age >= 18 and age <= 45 and gender == "f":
+    if pregnancy == 1:
         result.append(others.folate())
 
     #以下Immunitzationns
