@@ -15,12 +15,12 @@ app = Flask(__name__)
 #「/index」へアクセスがあった場合に、「index.html」を返す
 @app.route("/index")
 def index():
-    return render_template('index.html', title='health maintainance')
+    return render_template('index.html', title='health maintenance')
     # returnにtitleとnameの変数を追加。
 
 @app.route("/")
 def toppage():
-    return render_template('toppage.html', title='health maintainance')
+    return render_template('toppage.html', title='health maintenance')
 
 #POSTの時の処理
 #returnの前でも返せない。なぜ？
